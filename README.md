@@ -15,3 +15,10 @@ Secondly, we're going to analyze the code.
     - ```res```: represents the information what we want to send back (Cookies, headers, HTTP status code, etc).
     - ```res.end()```: it has to be called at the end to let the server know we're done.
   - ```listen()```: method to choose the port and start listening.
+
+### Server 2nd version
+
+In this version, I install Express before, which is a NodeJS framework. There are a few differences compared to the first version.
+
+First of all, we don't use the method ```createServer()``` provided by NodeJS. The line ```const app = express()``` creates the server easily.
+Then, ```app.get(URL, callback)``` is how we handle the request when an user visits a particular URL.
